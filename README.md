@@ -8,8 +8,18 @@ ros : noetic
 
 Save the STL file from CAD and the blender file with corrected colors and coordinates to `/robot`.
 
-### シミュレータの起動  Starting the Simulator
-
+## シミュレータの起動  Starting the Simulator
+シミュレータのみの起動
 ```bash:msd_tunnel_sim.launch
-roslaunch 
+roslaunch msd_simulator msd_tunnel_dtw.launch
+```
+
+シミュレータとRvizの起動
+```
+roslaunch msd_simulator msd_tunnel_gazebo_rviz.launch position:=wheel rvizconfig:=false
+```
+
+キーボードコントローラ
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
