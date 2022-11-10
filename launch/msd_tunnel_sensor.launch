@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="position" default="wheel" /> <!-- wheel or tracker -->
+  <arg name="model" default="$(find msd_simulator)/xacro/msd_tunnel_sensor.xacro" />
+  <arg name="rvizconfig" default="$(find msd_simulator)/rviz/msd_tunnel_sim.rviz" />  
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model) --inorder"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model msd_tunnel_sensor" />
+
+  <group if="$(eval position=='wheel')">
+    <param name="/msd_tunnel_sensor/diff_drive_controller/enable_odom_tf" value="true" />
+  </group>
+  <group unless="$(eval position=='wheel')">
+    <param name="/msd_tunnel_sensor/diff_drive_controller/enable_odom_tf" value="false" />
+  </group>
+
+  <group if="$(eval position=='tracker')">
+    <node name="odom_tf_converter" pkg="msd_simulator" type="odom_tf_converter">
+      <param name="parent_frame_id" value="odom"/>
+    </node>
+  </group>
+
+  <rosparam command="load"  file="$(find msd_simulator)/config/diff_drive_controller.yaml" ns="/msd_tunnel_sensor"/>
+  <rosparam command="load"  file="$(find msd_simulator)/config/joint_state_controller.yaml" ns="/msd_tunnel_sensor"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/msd_tunnel_sensor" 
+      args="diff_drive_controller joint_state_controller" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" ns="/msd_tunnel_sensor"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+</launch>

@@ -16,7 +16,12 @@ roslaunch msd_simulator msd_tunnel_dtw.launch
 
 シミュレータとRvizの起動
 ```
-roslaunch msd_simulator msd_tunnel_gazebo_rviz.launch position:=wheel rvizconfig:=false
+roslaunch msd_simulator msd_tunnel_gazebo_rviz.launch
+```
+
+センサーシミュレーション
+```
+roslaunch msd_simulator msd_tunnel_sensor.launch
 ```
 
 キーボードコントローラ
