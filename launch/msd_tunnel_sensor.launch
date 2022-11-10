@@ -2,7 +2,7 @@
 <launch>
   <arg name="position" default="wheel" /> <!-- wheel or tracker -->
   <arg name="model" default="$(find msd_simulator)/xacro/msd_tunnel_sensor.xacro" />
-  <arg name="rvizconfig" default="$(find msd_simulator)/rviz/msd_tunnel_sim.rviz" />  
+  <arg name="rvizconfig" default="$(find msd_simulator)/rviz/msd_tunnel_sim_sensor.rviz" />  
   <param name="robot_description" command="$(find xacro)/xacro $(arg model) --inorder"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
