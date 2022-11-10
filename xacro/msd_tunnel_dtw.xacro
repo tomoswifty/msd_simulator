@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="msd_tunnel_dtw" xmlns:xacro="http://ros.org/wiki/xacro">
   <material name="gray">
-    <color rgba="0.5 0.5 0.5 1.0"/>
+    <color rgba="0.3 0.3 0.3 1.0"/>
   </material>
   <material name="red">
     <color rgba="1.0 0.0 0.0 1.0"/>
@@ -74,7 +74,6 @@
         <geometry>
           <cylinder radius="0.055" length="0.076" />
         </geometry>
-        <material name="gray" />
       </collision>
     </link>
     <gazebo reference="${prefix}_link">
@@ -96,7 +95,7 @@
   <link name="body_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="182.8"/>
+      <mass value="18.28"/>
       <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
     </inertial>
     <visual>
@@ -104,6 +103,7 @@
       <geometry>
         <mesh filename="package://msd_simulator/model/meshes/msd_tunnel/body.dae" />
       </geometry>
+      <material name="gray" />
     </visual>
     <collision>
       <origin xyz="0 0 0.250" rpy="0 0 0" />
