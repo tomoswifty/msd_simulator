@@ -1,29 +1,24 @@
 <?xml version='1.0'?>
-<sdf cersion="1.4">
+<sdf cersion="1.6">
   <model name="iijima_tunnel">
+    <static>true</static>
     <pose>0 0 0 0 0 0</pose>
-      <link name="link">
-      <inertial>
-        <mass>100000</mass>
-        <ixx>1.0</ixx>
-        <ixy>0.0</ixy>
-        <ixz>0.0</ixz>
-        <iyy>1.0</iyy>
-        <iyz>0.0</iyz>
-        <izz>1.0</izz>
-      </inertial>
+    <link name="link">
       <collision>
         <geometry>
-            <mesh>
-              <uri>model://meshes/iijima_tunnel/iijima_tunnel_m.dae</uri>
-            </mesh>
+          <mesh>
+            <uri>model://iijima_tunnel/meshes/iijima_tunnel_m.dae</uri>
+          </mesh>
         </geometry>
       </collision>
       <visual name="visual">
-        <pose>0 0 0 0 0 0</pose>
         <geometry>
-            <mesh>
-              <uri>model://meshes/iijima_tunnel/iijima_tunnel_m.dae</uri>
-            </mesh>
-        </geometry>       
+          <mesh>
+            <uri>model://iijima_tunnel/meshes/iijima_tunnel_m.dae</uri>
+          </mesh>
+        </geometry>
+        <cast_shadows>false</cast_shadows>       
       </visual>
+    </link>
+  </model>
+</sdf>

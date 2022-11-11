@@ -32,7 +32,7 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://msd_simulator/model/meshes/msd_tunnel/drive_wheel.dae"/>
+          <mesh filename="package://msd_simulator/model/msd_tunnel/meshes/drive_wheel.dae"/>
         </geometry>
         <material name="red"/>
       </visual>
@@ -66,7 +66,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://msd_simulator/model/meshes/msd_tunnel/roller.dae" />
+          <mesh filename="package://msd_simulator/model/msd_tunnel/meshes/roller.dae" />
         </geometry>
       </visual>
       <collision>
@@ -98,7 +98,7 @@
           <cylinder radius="0.025" length="0.050" />
         </geometry> -->
         <geometry>
-          <mesh filename="package://msd_simulator/model/meshes/msd_tunnel/rplidar-s1m1-r1.dae"/>
+          <mesh filename="package://msd_simulator/model/msd_tunnel/meshes/rplidar-s1m1-r1.dae"/>
         </geometry>
         <material name="red" />
       </visual>
@@ -108,7 +108,7 @@
           <cylinder radius="0.025" length="0.050" />
         </geometry> -->
         <geometry>
-          <mesh filename="package://msd_simulator/model/meshes/msd_tunnel/rplidar-s1m1-r1.dae"/>
+          <mesh filename="package://msd_simulator/model/meshes/rplidar-s1m1-r1.dae"/>
         </geometry>
       </collision>
     </link>
@@ -163,7 +163,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://msd_simulator/model/meshes/msd_tunnel/body.dae" />
+        <mesh filename="package://msd_simulator/model/msd_tunnel/meshes/body.dae" />
       </geometry>
       <material name="gray" />
     </visual>
