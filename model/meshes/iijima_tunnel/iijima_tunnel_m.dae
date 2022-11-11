@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.82.7</authoring_tool>
+    </contributor>
+    <created>2022-11-11T09:39:38</created>
+    <modified>2022-11-11T09:39:38</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">39.59775</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">1</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Iijima_Tunnel_M-mesh" name="Iijima Tunnel M">
+      <mesh>
+        <source id="Iijima_Tunnel_M-mesh-positions">
+          <float_array id="Iijima_Tunnel_M-mesh-positions-array" count="285">-1.73 1.38 -120 -1.558261 -0.2 -120 -1.73 1.38 0 -1.558261 -0.2 0 -1.706308 1.665328 0 -1.706308 1.665328 -120 -1.635882 1.942842 0 -1.635882 1.942842 -120 -1.520649 2.20494 0 -1.520649 2.20494 -120 -1.363767 2.444443 0 -1.363767 2.444443 -120 -1.169533 2.654791 0 -1.169533 2.654791 -120 -0.9432655 2.830224 0 -0.9432655 2.830224 -120 -0.6911627 2.965936 0 -0.6911627 2.965936 -120 -0.4201293 3.058211 0 -0.4201293 3.058211 -120 -0.1375889 3.10452 0 -0.1375889 3.10452 -120 0.14872 3.103596 0 0.14872 3.103596 -120 0.4309555 3.055463 0 0.4309555 3.055463 -120 0.7013875 2.961441 0 0.7013875 2.961441 -120 0.9526089 2.824104 0 0.9526089 2.824104 -120 1.177739 2.647214 0 1.177739 2.647214 -120 1.370611 2.435616 0 1.370611 2.435616 -120 1.525944 2.195105 0 1.525944 2.195105 -120 1.639481 1.932268 0 1.639481 1.932268 -120 1.708115 1.654306 0 1.708115 1.654306 -120 1.729964 1.368831 0 1.729964 1.368831 -120 1.559439 -0.2 -120 1.559439 -0.2 0 0 2.91 -120 0.2656817 2.886756 -120 0.5232908 2.81773 -120 0.765 2.705019 -120 0.983465 2.552048 -120 1.172048 2.363465 -120 1.325019 2.145 -120 1.43773 1.903291 -120 1.506756 1.645682 -120 1.53 1.38 -120 1.38 0 -120 -1.38 0 -120 -1.53 1.38 -120 -1.506756 1.645682 -120 -1.43773 1.903291 -120 -1.325019 2.145 -120 -1.172048 2.363465 -120 -0.983465 2.552048 -120 -0.765 2.705019 -120 -0.5232908 2.81773 -120 -0.2656817 2.886756 -120 0 2.91 0 -0.2656817 2.886756 0 -0.5232908 2.81773 0 -0.765 2.705019 0 -0.983465 2.552048 0 -1.172048 2.363465 0 -1.325019 2.145 0 -1.43773 1.903291 0 -1.506756 1.645682 0 -1.53 1.38 0 -1.38 0 0 1.38 0 0 1.53 1.38 0 1.506756 1.645682 0 1.43773 1.903291 0 1.325019 2.145 0 1.172048 2.363465 0 0.983465 2.552048 0 0.765 2.705019 0 0.5232908 2.81773 0 0.2656817 2.886756 0 -1.38 0 -120 -1.38 0 0 -1.53 1.38 0 1.38 0 -120 1.53 1.38 0 1.38 0 0 1.38 0 -120 1.38 0 0 -1.38 0 0</float_array>
+          <technique_common>
+            <accessor source="#Iijima_Tunnel_M-mesh-positions-array" count="95" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Iijima_Tunnel_M-mesh-normals">
+          <float_array id="Iijima_Tunnel_M-mesh-normals-array" count="240">-0.9941445 -0.1080592 0 -0.9965705 0.08274865 0 -0.9692749 0.2459802 0 -0.9692751 0.2459793 0 -0.9154317 0.4024735 0 -0.915432 0.4024727 0 -0.8365155 0.5479435 0 -0.7346872 0.6784061 0 -0.7346877 0.6784056 0 -0.6127369 0.7902871 0 -0.6127367 0.7902873 0 -0.4740037 0.8805229 0 -0.4740035 0.880523 0 -0.322288 0.9466416 0 -0.3222882 0.9466417 0 -0.1617448 0.9868326 0 -0.1617448 0.9868327 0 0.003228485 0.9999949 0 0.1681127 0.9857678 0 0.1681127 0.9857679 0 0.3283929 0.9445412 0 0.3283928 0.9445413 0 0.4796786 0.8774444 0 0.4796789 0.8774442 0 0.6178266 0.7863145 0 0.6178262 0.7863148 0 0.7390525 0.6736479 0 0.7390521 0.6736484 0 0.840036 0.5425309 0 0.8400355 0.5425315 0 0.918011 0.3965551 0 0.9180113 0.3965543 0 0.970843 0.2397164 0 0.997084 0.07631248 0 0.997084 0.07631337 0 0.9941446 -0.1080592 0 0 -1 0 0 0 -1 6.8203e-5 0 -1 -6.77353e-5 0 -1 1.09923e-4 0 -1 -9.66927e-5 0 -1 0 0 1 0.9941446 0.108059 0 0.9941446 0.1080592 0 -0.9961948 -0.0871551 0 -0.9961947 -0.08715599 0 -0.9659261 -0.2588183 0 -0.9659259 -0.2588192 0 -0.9063078 -0.4226183 0 -0.9063075 -0.4226191 0 -0.8191526 -0.5735758 0 -0.8191517 -0.5735771 0 -0.7071069 -0.7071068 0 -0.7071066 -0.707107 0 -0.5735765 -0.819152 0 -0.573576 -0.8191524 0 -0.4226187 -0.9063077 0 -0.2588193 -0.9659258 0 -0.2588194 -0.9659258 0 -0.08715575 -0.9961948 0 0.08715575 -0.9961948 0 0.2588194 -0.9659258 0 0.2588193 -0.9659258 0 0.4226187 -0.9063077 0 0.573576 -0.8191524 0 0.5735765 -0.819152 0 0.7071066 -0.707107 0 0.7071069 -0.7071068 0 0.8191517 -0.5735771 0 0.8191526 -0.5735758 0 0.9063075 -0.4226191 0 0.9063078 -0.4226183 0 0.9659259 -0.2588192 0 0.9659261 -0.2588183 0 0.9961947 -0.08715599 0 0.9961948 -0.0871551 0 -0.9941446 0.1080592 0 -0.9941446 0.108059 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Iijima_Tunnel_M-mesh-normals-array" count="80" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Iijima_Tunnel_M-mesh-vertices">
+          <input semantic="POSITION" source="#Iijima_Tunnel_M-mesh-positions"/>
+        </vertices>
+        <triangles count="172">
+          <input semantic="VERTEX" source="#Iijima_Tunnel_M-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Iijima_Tunnel_M-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 2 0 1 0 3 0 0 1 2 1 4 1 0 1 4 1 5 1 5 2 4 2 6 2 5 3 6 3 7 3 7 4 6 4 8 4 7 5 8 5 9 5 9 6 8 6 10 6 9 6 10 6 11 6 11 7 10 7 12 7 11 8 12 8 13 8 13 9 12 9 14 9 13 10 14 10 15 10 15 11 14 11 16 11 15 12 16 12 17 12 17 13 16 13 18 13 17 14 18 14 19 14 19 15 18 15 20 15 19 16 20 16 21 16 21 17 20 17 22 17 21 17 22 17 23 17 23 18 22 18 24 18 23 19 24 19 25 19 25 20 24 20 26 20 25 21 26 21 27 21 27 22 26 22 28 22 27 23 28 23 29 23 29 24 28 24 30 24 29 25 30 25 31 25 31 26 30 26 32 26 31 27 32 27 33 27 33 28 32 28 34 28 33 29 34 29 35 29 35 30 34 30 36 30 35 31 36 31 37 31 37 32 36 32 38 32 37 32 38 32 39 32 39 33 38 33 40 33 39 34 40 34 41 34 42 35 41 35 43 35 43 35 41 35 40 35 1 36 42 36 3 36 3 36 42 36 43 36 19 37 21 37 44 37 44 37 21 37 23 37 44 37 23 37 45 37 45 37 23 37 25 37 45 37 25 37 46 37 46 37 25 37 27 37 46 37 27 37 47 37 47 37 27 37 29 37 47 37 29 37 48 37 48 37 29 37 31 37 48 37 31 37 49 37 49 38 31 38 33 38 49 37 33 37 50 37 50 37 33 37 35 37 50 37 35 37 51 37 51 39 35 39 37 39 51 37 37 37 52 37 52 37 37 37 39 37 52 37 39 37 53 37 53 37 39 37 41 37 53 40 41 40 54 40 54 41 41 41 42 41 54 37 42 37 55 37 55 37 42 37 1 37 55 37 1 37 56 37 56 37 1 37 0 37 56 37 0 37 57 37 57 37 0 37 5 37 57 37 5 37 58 37 58 37 5 37 7 37 58 37 7 37 59 37 59 37 7 37 9 37 59 37 9 37 60 37 60 37 9 37 11 37 60 37 11 37 61 37 61 37 11 37 13 37 61 37 13 37 62 37 62 37 13 37 15 37 62 37 15 37 63 37 63 37 15 37 17 37 63 37 17 37 64 37 64 37 17 37 19 37 64 37 19 37 44 37 65 42 20 42 66 42 66 42 20 42 18 42 66 42 18 42 67 42 67 42 18 42 16 42 67 42 16 42 68 42 68 42 16 42 14 42 68 42 14 42 69 42 69 42 14 42 12 42 69 42 12 42 70 42 70 42 12 42 10 42 70 42 10 42 71 42 71 42 10 42 8 42 71 42 8 42 72 42 72 42 8 42 6 42 72 42 6 42 73 42 73 42 6 42 4 42 73 42 4 42 74 42 74 42 4 42 2 42 74 42 2 42 75 42 75 42 2 42 3 42 75 42 3 42 76 42 76 42 3 42 43 42 76 42 43 42 77 42 77 42 43 42 40 42 77 42 40 42 78 42 78 42 40 42 38 42 78 42 38 42 79 42 79 42 38 42 36 42 79 42 36 42 80 42 80 42 36 42 34 42 80 42 34 42 81 42 81 42 34 42 32 42 81 42 32 42 82 42 82 42 32 42 30 42 82 42 30 42 83 42 83 42 30 42 28 42 83 42 28 42 84 42 84 42 28 42 26 42 84 42 26 42 85 42 85 42 26 42 24 42 85 42 24 42 65 42 65 42 24 42 22 42 65 42 22 42 20 42 86 43 56 43 87 43 87 44 56 44 88 44 53 45 77 45 52 45 52 46 77 46 78 46 52 47 78 47 51 47 51 48 78 48 79 48 51 49 79 49 50 49 50 50 79 50 80 50 50 51 80 51 49 51 49 52 80 52 81 52 49 53 81 53 48 53 48 54 81 54 82 54 48 55 82 55 47 55 47 56 82 56 83 56 47 57 83 57 46 57 46 57 83 57 84 57 46 58 84 58 45 58 45 59 84 59 85 59 45 60 85 60 44 60 44 60 85 60 65 60 44 61 65 61 64 61 64 61 65 61 66 61 64 62 66 62 63 62 63 63 66 63 67 63 63 64 67 64 62 64 62 64 67 64 68 64 62 65 68 65 61 65 61 66 68 66 69 66 61 67 69 67 60 67 60 68 69 68 70 68 60 69 70 69 59 69 59 70 70 70 71 70 59 71 71 71 58 71 58 72 71 72 72 72 58 73 72 73 57 73 57 74 72 74 73 74 57 75 73 75 56 75 56 76 73 76 74 76 53 77 89 77 90 77 90 78 89 78 91 78 92 79 86 79 93 79 93 79 86 79 94 79</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Iijima_Tunnel_M" name="Iijima Tunnel M" type="NODE">
+        <matrix sid="transform">1.19249e-8 -4.37114e-8 -1 10 -1 -5.21253e-16 -1.19249e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
+        <instance_geometry url="#Iijima_Tunnel_M-mesh" name="Iijima Tunnel M"/>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

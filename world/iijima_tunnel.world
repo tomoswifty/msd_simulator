@@ -11,6 +11,7 @@
 
     <include>
       <uri>model://iijima_tunnel</uri>
+      <static>true</static>
     </include>
   </world>
 </sdf>
